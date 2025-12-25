@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Satara - Your complete local guide to attractions, food, and culture">
+    <title>Satara Local Guide</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <i class="fas fa-map-marked-alt"></i>
+                <span>Satara Guide</span>
+            </div>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#attractions" class="nav-link">Attractions</a></li>
+                <li><a href="#food" class="nav-link">Food</a></li>
+                <li><a href="#restaurants" class="nav-link">Restaurants</a></li>
+                <li><a href="#stays" class="nav-link">Stays</a></li>
+                <li><a href="#culture" class="nav-link">Culture</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Discover Satara</h1>
+            <p>Your Gateway to History, Nature & Culture</p>
+            <a href="#attractions" class="btn btn-primary">Explore Now</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Satara</h2>
+            <div class="about-text">
+                <h3>The City of Seventeen Peaks</h3>
+                <p>Satara, a historic city nestled in the Western Ghats of Maharashtra, derives its name from the Marathi words <strong>"Saat"</strong> (seven) and <strong>"Tara"</strong> (stars or peaks), meaning "seventeen peaks." The city is surrounded by seventeen hills, which gave it this distinctive name.</p>
+                
+                <h3>Historical Significance</h3>
+                <p>In ancient times, Satara was known as <strong>"Jaoli"</strong> or <strong>"Javali"</strong>. The region gained prominence during the Maratha Empire when it served as the seat of the Chhatrapati (Maratha king) after the fall of Raigad. In 1699, Chhatrapati Rajaram Maharaj made Satara his capital, establishing it as a significant political and cultural center.</p>
+                
+                <h3>The Legend</h3>
+                <p>According to local folklore, the name also has mythological connections. It is believed that the seventeen peaks represent the seventeen stars of the constellation, making Satara a place blessed by celestial powers. The most prominent of these peaks is Ajinkyatara Fort, which stands as a sentinel overlooking the city.</p>
+                
+                <h3>Modern Satara</h3>
+                <p>Today, Satara is known for its rich heritage, natural beauty, and agricultural prosperity. The city continues to honor its glorious past while embracing modernity, making it a perfect blend of history and progress.</p>
+            </div>
+            
+            <div class="about-stats-centered">
+                <div class="stat-item" data-modal="peaks">
+                    <i class="fas fa-mountain"></i>
+                    <h4>17 Peaks</h4>
+                    <p>Surrounding Hills</p>
+                </div>
+                <div class="stat-item" data-modal="capital">
+                    <i class="fas fa-landmark"></i>
+                    <h4>1699</h4>
+                    <p>Capital Established</p>
+                </div>
+                <div class="stat-item" data-modal="location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h4>Western Ghats</h4>
+                    <p>Location</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Attractions Section -->
+    <section id="attractions" class="section">
+        <div class="container">
+            <h2 class="section-title">Popular Attractions</h2>
+            <p class="section-subtitle">Discover the best places to visit in Satara - from historic forts to natural wonders</p>
+            
+            <div class="grid">
+                <div class="card card-image">
+                    <div class="card-img">
+                        <img src="images/attractions/kaas plateau.webp" alt="Kaas Plateau">
+                        <div class="card-overlay">
+                            <div class="card-icon"><i class="fas fa-landmark"></i></div>
+                        </div>
+                        <div class="card-badge">Nature</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Kaas Plateau</h3>
+                        <p>UNESCO World Heritage Site known for its stunning biodiversity and wildflowers. Best visited during monsoon season.</p>
+                        <div class="attraction-info">
+                            <span><i class="fas fa-map-marker-alt"></i> 25 km from Satara</span>
+                            <span><i class="fas fa-clock"></i> Half Day</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card card-image">
+                    <div class="card-img">
+                        <img src="images/attractions/Thoseghar.jpg" alt="Thoseghar Waterfall">
+                        <div class="card-overlay">
+                            <div class="card-icon"><i class="fas fa-water"></i></div>
+                        </div>
+                        <div class="card-badge">Waterfall</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Thoseghar Waterfall</h3>
+                        <p>Spectacular waterfall cascading from 500 feet. A must-visit during monsoon for breathtaking views.</p>
+                        <div class="attraction-info">
+                            <span><i class="fas fa-map-marker-alt"></i> 22 km from Satara</span>
+                            <span><i class="fas fa-clock"></i> Half Day</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card card-image">
+                    <div class="card-img">
+                        <img src="images/attractions/Sajjangad.jpg" alt="Sajjangad Fort">
+                        <div class="card-overlay">
+                            <div class="card-icon"><i class="fas fa-gopuram"></i></div>
+                        </div>
+                        <div class="card-badge">Heritage | Pilgrimage</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Sajjangad Fort</h3>
+                        <p>Sacred fort and final resting place of Sant Ramdas, spiritual guru of Shivaji Maharaj.</p>
+                        <div class="attraction-info">
+                            <span><i class="fas fa-map-marker-alt"></i> 18 km from Satara</span>
+                            <span><i class="fas fa-clock"></i> Half Day</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card card-image">
+                    <div class="card-img">
+                        <img src="images/attractions/Ajinkyatara.jpg" alt="Ajinkyatara Fort">
+                        <div class="card-overlay">
+                            <div class="card-icon"><i class="fas fa-mountain"></i></div>
+                        </div>
+                        <div class="card-badge">Heritage</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Ajinkyatara Fort</h3>
+                        <p>Historic fort at 3,300 feet offering panoramic views of Satara city and surrounding valleys.</p>
+                        <div class="attraction-info">
+                            <span><i class="fas fa-map-marker-alt"></i> 4 km from Satara</span>
+                            <span><i class="fas fa-clock"></i> 2-3 Hours</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card card-image">
+                    <div class="card-img">
+                        <img src="images/attractions/Koyna Dam.jpg" alt="Koyna Dam">
+                        <div class="card-overlay">
+                            <div class="card-icon"><i class="fas fa-tint"></i></div>
+                        </div>
+                        <div class="card-badge">Nature</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Koyna Dam</h3>
+                        <p>One of the largest dams in Maharashtra, surrounded by lush greenery and scenic beauty.</p>
+                        <div class="attraction-info">
+                            <span><i class="fas fa-map-marker-alt"></i> 60 km from Satara</span>
+                            <span><i class="fas fa-clock"></i> Full Day</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card card-image">
+                    <div class="card-img">
+                        <img src="images/attractions/chalkewadi-windmill.jpg" alt="Chalkewadi Windmill Farms">
+                        <div class="card-overlay">
+                            <div class="card-icon"><i class="fas fa-wind"></i></div>
+                        </div>
+                        <div class="card-badge">Nature</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Chalkewadi Windmill Farms</h3>
+                        <p>Asia's largest windmill farm with breathtaking views and endless rows of wind turbines.</p>
+                        <div class="attraction-info">
+                            <span><i class="fas fa-map-marker-alt"></i> 28 km from Satara</span>
+                            <span><i class="fas fa-clock"></i> Half Day</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Food Section -->
+    <section id="food" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Local Cuisine</h2>
+            <div class="grid">
+                <div class="card card-image">
+                    <div class="card-img">
+                        <img src="images/food/Misal Pav.jpg" alt="Misal Pav">
+                        <div class="card-overlay">
+                            <div class="card-icon"><i class="fas fa-utensils"></i></div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Misal Pav</h3>
+                        <p>Spicy curry made with sprouted lentils, served with bread rolls.</p>
+                    </div>
+                </div>
+                <div class="card card-image">
+                    <div class="card-img">
+                        <img src="images/food/kandi-peda.jpg" alt="Kandi Pedha">
+                        <div class="card-overlay">
+                            <div class="card-icon"><i class="fas fa-cookie"></i></div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Kandi Pedha</h3>
+                        <p>Famous sweet delicacy unique to Satara region.</p>
+                    </div>
+                </div>
+                <div class="card card-image">
+                    <div class="card-img">
+                        <img src="images/food/Zunka bhakri.jpg" alt="Zunka Bhakri">
+                        <div class="card-overlay">
+                            <div class="card-icon"><i class="fas fa-bread-slice"></i></div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Zunka Bhakri</h3>
+                        <p>Traditional Maharashtrian dish with gram flour curry and millet bread.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Restaurants Section -->
+    <section id="restaurants" class="section">
+        <div class="container">
+            <h2 class="section-title">Famous Restaurants</h2>
+            <div class="grid">
+                <div class="card card-image">
+                    <div class="card-img">
+                        <img src="images/restaurants/hotel-radhika.jpg" alt="Hotel Radhika">
+                        <div class="card-overlay">
+                            <div class="card-icon"><i class="fas fa-store"></i></div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Hotel Radhika</h3>
+                        <p>Popular for authentic Maharashtrian thali and traditional dishes. Known for homely taste and generous portions.</p>
+                        <div class="restaurant-info">
+                            <span><i class="fas fa-map-marker-alt"></i> Shivaji Road</span>
+                            <span><i class="fas fa-star"></i> 4.2/5</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-image">
+                    <div class="card-img">
+                        <img src="images/restaurants/hotel-palvi.jpg" alt="Hotel Palvi">
+                        <div class="card-overlay">
+                            <div class="card-icon"><i class="fas fa-store"></i></div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Hotel Palvi</h3>
+                        <p>Well-known restaurant in Satara offering delicious vegetarian and non-vegetarian dishes with excellent service and ambiance.</p>
+                        <div class="restaurant-info">
+                            <span><i class="fas fa-map-marker-alt"></i> Satara City</span>
+                            <span><i class="fas fa-star"></i> 4.3/5</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-image">
+                    <div class="card-img">
+                        <img src="images/restaurants/hotel-manas" alt="Manas Resto">
+                        <div class="card-overlay">
+                            <div class="card-icon"><i class="fas fa-store"></i></div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Manas Resto</h3>
+                        <p>Iconic brand of Satara known for authentic local flavors and traditional Maharashtrian cuisine. A must-visit dining destination.</p>
+                        <div class="restaurant-info">
+                            <span><i class="fas fa-map-marker-alt"></i> Satara City</span>
+                            <span><i class="fas fa-star"></i> 4.6/5</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accommodation Section -->
+    <section id="stays" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Where to Stay</h2>
+            <div class="grid">
+                <div class="card card-image">
+                    <div class="card-img">
+                        <img src="images/stays/hotel-preetiexecutive" alt="Hotel Preeti Executive">
+                        <div class="card-overlay">
+                            <div class="card-icon"><i class="fas fa-hotel"></i></div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Hotel Preeti Executive</h3>
+                        <p>Modern hotel with comfortable rooms, restaurant, and conference facilities. Ideal for business and leisure travelers.</p>
+                        <div class="stay-info">
+                            <span><i class="fas fa-rupee-sign"></i> ₹2,500 - ₹4,000/night</span>
+                            <span><i class="fas fa-star"></i> 4.0/5</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-image">
+                    <div class="card-img">
+                        <img src="images/stays/hotel-mahabaleshwar.jpg" alt="Hotel Mahableshwar">
+                        <div class="card-overlay">
+                            <div class="card-icon"><i class="fas fa-hotel"></i></div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Hotel Mahableshwar</h3>
+                        <p>Budget-friendly hotel with clean rooms and basic amenities. Perfect for backpackers and budget travelers.</p>
+                        <div class="stay-info">
+                            <span><i class="fas fa-rupee-sign"></i> ₹1,200 - ₹2,000/night</span>
+                            <span><i class="fas fa-star"></i> 3.8/5</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-image">
+                    <div class="card-img">
+                        <img src="images/stays/aamrai-resort.avif" alt="Aamrai Resort">
+                        <div class="card-overlay">
+                            <div class="card-icon"><i class="fas fa-tree"></i></div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Aamrai Resort</h3>
+                        <p>Peaceful countryside accommodation surrounded by mango orchards. Perfect for nature lovers seeking tranquility and authentic rural experience.</p>
+                        <div class="stay-info">
+                            <span><i class="fas fa-rupee-sign"></i> ₹1,500 - ₹3,000/night</span>
+                            <span><i class="fas fa-star"></i> 4.2/5</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-image">
+                    <div class="card-img">
+                        <img src="images/stays/homestays-and guesthouse.jpg" alt="Homestays & Guesthouses">
+                        <div class="card-overlay">
+                            <div class="card-icon"><i class="fas fa-home"></i></div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Homestays & Guesthouses</h3>
+                        <p>Experience local hospitality with various homestays available near major attractions. Authentic Satara experience.</p>
+                        <div class="stay-info">
+                            <span><i class="fas fa-rupee-sign"></i> ₹800 - ₹2,500/night</span>
+                            <span><i class="fas fa-star"></i> 4.3/5</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-image">
+                    <div class="card-img">
+                        <img src="images/stays/nivant-hill-resort.jpg" alt="Nivant Hill Resto">
+                        <div class="card-overlay">
+                            <div class="card-icon"><i class="fas fa-mountain"></i></div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Nivant Hill Resto</h3>
+                        <p>Famous hilltop resort near Kaas Plateau offering panoramic views, comfortable rooms, and excellent dining. Perfect for nature lovers.</p>
+                        <div class="stay-info">
+                            <span><i class="fas fa-rupee-sign"></i> ₹3,000 - ₹5,500/night</span>
+                            <span><i class="fas fa-star"></i> 4.5/5</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-image">
+                    <div class="card-img">
+                        <img src="images/stays/radhika-executives.jpg" alt="Hotel Radhika Executive">
+                        <div class="card-overlay">
+                            <div class="card-icon"><i class="fas fa-building"></i></div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Hotel Radhika Executive</h3>
+                        <p>Comfortable hotel with modern amenities, in-house restaurant, and excellent service. Conveniently located in the heart of the city.</p>
+                        <div class="stay-info">
+                            <span><i class="fas fa-rupee-sign"></i> ₹2,200 - ₹3,800/night</span>
+                            <span><i class="fas fa-star"></i> 4.1/5</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Culture Section -->
+    <section id="culture" class="section">
+        <div class="container">
+            <h2 class="section-title">Culture & Heritage</h2>
+            <div class="grid">
+                <div class="card card-image">
+                    <div class="card-img">
+                        <img src="images/culture/powada.jpg" alt="Powada Performance">
+                        <div class="card-overlay">
+                            <div class="card-icon"><i class="fas fa-music"></i></div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Powada</h3>
+                        <p>Traditional ballad form celebrating Maratha warriors and history.</p>
+                    </div>
+                </div>
+                <div class="card card-image">
+                    <div class="card-img">
+                        <img src="images/culture/lavani.jpg" alt="Lavani Dance">
+                        <div class="card-overlay">
+                            <div class="card-icon"><i class="fas fa-theater-masks"></i></div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Lavani</h3>
+                        <p>Traditional folk dance and music performance art form.</p>
+                    </div>
+                </div>
+                <div class="card card-image">
+                    <div class="card-img">
+                        <img src="images/culture/festivals.jpg" alt="Local Festivals">
+                        <div class="card-overlay">
+                            <div class="card-icon"><i class="fas fa-calendar-alt"></i></div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Festivals</h3>
+                        <p>Ganesh Chaturthi, Diwali, and local fairs celebrated with great enthusiasm.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-content">
+                <form class="contact-form" action="https://formsubmit.co/devdattasalunkhe0707@gmail.com" method="POST">
+                    <!-- Hidden fields for FormSubmit configuration -->
+                    <input type="hidden" name="_subject" value="New message from Satara Guide website">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Satara, Maharashtra, India</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+91 82379 08607</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>devdattasalunkhe0707@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals for About Stats -->
+    <div id="modal-peaks" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2><i class="fas fa-mountain"></i> The Seventeen Peaks of Satara</h2>
+            <div class="modal-body">
+                <p>Satara is uniquely surrounded by seventeen majestic hills and peaks, which gave the city its distinctive name. The word "Satara" comes from the Marathi words <strong>"Saat"</strong> (seven) and <strong>"Tara"</strong> (stars/peaks), literally meaning "seventeen peaks."</p>
+                
+                <h3>Notable Peaks Include:</h3>
+                <ul>
+                    <li><strong>Ajinkyatara Fort</strong> - The most prominent peak overlooking the city at 3,300 feet</li>
+                    <li><strong>Yawateshwar</strong> - Sacred hill with ancient temple</li>
+                    <li><strong>Sajjangad</strong> - Fort of the good people, home to Sant Ramdas Samadhi</li>
+                    <li><strong>Chandan-Vandan</strong> - Twin peaks with historical significance</li>
+                </ul>
+                
+                <p>These peaks not only provide natural beauty but also served as strategic defense points during the Maratha Empire. The hills create a natural fortress around Satara, making it an ideal location for the capital.</p>
+                
+                <p><strong>Geographical Significance:</strong> The seventeen peaks form a protective ring around the city, creating a unique microclimate and contributing to the region's agricultural prosperity.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-capital" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2><i class="fas fa-landmark"></i> Capital Established in 1699</h2>
+            <div class="modal-body">
+                <p>In 1699, <strong>Chhatrapati Rajaram Maharaj</strong>, the younger son of Chhatrapati Shivaji Maharaj, established Satara as the capital of the Maratha Empire after the fall of Raigad Fort to the Mughals.</p>
+                
+                <h3>Historical Timeline:</h3>
+                <ul>
+                    <li><strong>1699</strong> - Rajaram Maharaj makes Satara the Maratha capital</li>
+                    <li><strong>1700</strong> - Death of Rajaram; his widow Tarabai continues the struggle</li>
+                    <li><strong>1708-1714</strong> - Satara serves as the seat of Maratha power</li>
+                    <li><strong>1818</strong> - British establish the Princely State of Satara</li>
+                    <li><strong>1848</strong> - Annexed by British after the death of Raja Pratapsinh</li>
+                </ul>
+                
+                <h3>Why Satara?</h3>
+                <p>Satara was chosen as the capital due to its:</p>
+                <ul>
+                    <li>Strategic location surrounded by protective hills</li>
+                    <li>Proximity to important forts and trade routes</li>
+                    <li>Natural defenses against enemy attacks</li>
+                    <li>Fertile land and water resources</li>
+                </ul>
+                
+                <p><strong>Legacy:</strong> Though the capital later moved to other cities, Satara remained an important political and cultural center, preserving the rich heritage of the Maratha Empire.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-location" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2><i class="fas fa-map-marker-alt"></i> Western Ghats Location</h2>
+            <div class="modal-body">
+                <p>Satara is nestled in the heart of the <strong>Western Ghats</strong>, a UNESCO World Heritage Site and one of the world's eight "hottest hotspots" of biological diversity.</p>
+                
+                <h3>Geographical Details:</h3>
+                <ul>
+                    <li><strong>Elevation:</strong> Approximately 2,300 feet (700 meters) above sea level</li>
+                    <li><strong>Coordinates:</strong> 17.69°N latitude, 74.01°E longitude</li>
+                    <li><strong>Region:</strong> Western Maharashtra, India</li>
+                    <li><strong>Climate:</strong> Moderate with cool winters and pleasant summers</li>
+                </ul>
+                
+                <h3>Western Ghats Significance:</h3>
+                <p>The Western Ghats, also known as <strong>Sahyadri</strong> in Marathi, is a mountain range that runs parallel to the western coast of India. This region is known for:</p>
+                <ul>
+                    <li><strong>Biodiversity:</strong> Home to thousands of endemic species of flora and fauna</li>
+                    <li><strong>Water Source:</strong> Origin of major rivers including Krishna and Godavari</li>
+                    <li><strong>Climate Regulation:</strong> Influences monsoon patterns across India</li>
+                    <li><strong>Natural Beauty:</strong> Stunning waterfalls, plateaus, and valleys</li>
+                </ul>
+                
+                <h3>Satara's Natural Treasures:</h3>
+                <p>Being in the Western Ghats, Satara boasts:</p>
+                <ul>
+                    <li><strong>Kaas Plateau</strong> - UNESCO World Heritage Site with rare wildflowers</li>
+                    <li><strong>Thoseghar Waterfall</strong> - Spectacular 500-foot cascade</li>
+                    <li><strong>Rich Agriculture</strong> - Fertile soil supporting strawberries, grapes, and sugarcane</li>
+                    <li><strong>Pleasant Climate</strong> - Year-round moderate temperatures</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo/team-logo.jpeg" alt="Team Logo">
+                    <p>Your trusted guide to exploring Satara</p>
+                </div>
+                <p class="footer-copyright">&copy; 2025 Satara Local Guide. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
