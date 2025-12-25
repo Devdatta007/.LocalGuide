@@ -1,61 +1,58 @@
 # Contact Form Setup Instructions
 
-Your contact form is currently configured to use **FormSubmit** - a free service that sends form submissions directly to your email.
+Your contact form is currently configured to use **Formspree** - a reliable service that sends form submissions directly to your email.
 
-## Setup Steps:
+## Current Setup:
 
-### 1. Replace Email Address
-In `index.html`, find this line:
-```html
-<form class="contact-form" action="https://formsubmit.co/your-email@example.com" method="POST">
+The form is already configured and ready to use! Messages will be sent to: **devdattasalunkhe0707@gmail.com**
+
+### How it works:
+1. Visitor fills out the contact form
+2. Formspree sends the message to your Gmail
+3. You receive an email with:
+   - Visitor's name
+   - Visitor's email
+   - Their message
+4. You can reply directly from your Gmail
+
+### First Time Setup:
+1. When someone submits the form for the first time, Formspree will send you a confirmation email
+2. Click the confirmation link in that email
+3. After confirmation, all messages will come through automatically
+
+### What you'll receive:
+```
+From: Formspree <noreply@formspree.io>
+To: devdattasalunkhe0707@gmail.com
+Subject: [Satara Guide] New submission from your form
+
+Name: John Doe
+Email: john@example.com
+Message: I want to visit Satara next month
 ```
 
-Replace `your-email@example.com` with your actual email address:
-```html
-<form class="contact-form" action="https://formsubmit.co/youremail@gmail.com" method="POST">
-```
+## Alternative: FormSubmit (Previous Setup)
 
-### 2. Verify Your Email (First Time Only)
-1. Open your website in a browser
-2. Fill out the contact form and submit it
-3. FormSubmit will send a verification email to your address
-4. Click the verification link in that email
-5. After verification, all future form submissions will be sent to your email automatically
-
-### 3. Features Included:
-- ✅ Email notifications for every form submission
-- ✅ Spam protection (captcha disabled for better UX)
-- ✅ Professional table format for emails
-- ✅ Custom subject line: "New message from Satara Guide website"
-- ✅ Completely free - no signup required
-
-## Alternative Options:
-
-### Option 2: EmailJS (More Features)
-If you want more control:
-1. Sign up at https://www.emailjs.com/
-2. Get your Service ID, Template ID, and Public Key
-3. Follow their integration guide
-
-### Option 3: Backend Server
-For a professional setup:
-- Use Node.js with Nodemailer
-- Use PHP mail() function
-- Use a contact form plugin if using WordPress
+If you prefer FormSubmit, you need to:
+1. Check your Gmail for "Form Activated" email
+2. Click the activation link
+3. After activation, messages will come through
 
 ## Testing:
-1. Replace the email address in the form action
-2. Open index.html in your browser
-3. Fill out and submit the form
-4. Check your email inbox (and spam folder)
+1. Open your website
+2. Fill out the contact form
+3. Submit it
+4. Check your Gmail inbox (and spam folder)
+5. Confirm the email if it's the first submission
 
 ## Troubleshooting:
-- **Not receiving emails?** Check your spam folder
-- **Need verification?** Submit the form once to trigger verification email
-- **Want custom redirect?** Add `<input type="hidden" name="_next" value="https://yoursite.com/thanks.html">`
+- **Not receiving emails?** Check spam/junk folder
+- **Need to change email?** Update the form action URL
+- **Want custom thank you page?** Add redirect URL in Formspree dashboard
 
 ## Current Configuration:
-- Service: FormSubmit (https://formsubmit.co)
-- Cost: Free
-- Setup Time: 2 minutes
+- Service: Formspree (https://formspree.io)
+- Email: devdattasalunkhe0707@gmail.com
+- Cost: Free (up to 50 submissions/month)
+- Setup Time: 1 minute
 - Verification: Required (one-time)
